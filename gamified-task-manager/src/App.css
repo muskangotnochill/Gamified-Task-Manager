@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 450px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.stats {
+  margin-bottom: 25px;
+}
+
+.stats h2 {
+  color: #555;
+}
+
+.stats h3 {
+  margin-top: 5px;
+  color: #777;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #36d1dc, #5b86e5);
+  transition: width 0.4s ease;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+.input-section button {
+  background: #667eea;
+  color: white;
+}
+
+.input-section button:hover {
+  background: #5a67d8;
+}
+
+.task-list {
+  list-style: none;
+}
+
+.task-list li {
+  background: #f7f8fc;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+.task-list li:hover {
+  background: #eef1ff;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-list button:first-child {
+  background: #38b000;
+  color: white;
+  margin-right: 5px;
+}
+
+.task-list button:first-child:hover {
+  background: #2d8f00;
+}
+
+.task-list button:last-child {
+  background: #e63946;
+  color: white;
+}
+
+.task-list button:last-child:hover {
+  background: #c1121f;
+}
